@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "master.Basic",
+		"id": "master.launchpad",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -35,7 +35,7 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "master.Basic.view.App",
+			"viewName": "master.launchpad.view.App",
 			"type": "XML",
 			"async": true,
 			"id": "App"
@@ -56,7 +56,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "master.Basic.i18n.i18n"
+					"bundleName": "master.launchpad.i18n.i18n"
 				}
 			}
 		},
