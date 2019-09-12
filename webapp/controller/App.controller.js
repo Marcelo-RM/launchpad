@@ -5,8 +5,16 @@ sap.ui.define([
 
 	return BaseController.extend("master.launchpad.controller.App", {
 		onInit: function () {
+			this.loadTilesView();
 			
-			
+		},
+
+		loadTilesView: function(){
+			if(!this.page){
+				this.page = new sap.ui.xmlfragment("master.launchpad.fragments.Tiles", this);
+			}
+			this.getView().byId("pageContainer").removeAllPages();
+			this.getView().byId("pageContainer").addPage(this.page);
 		},
 
 		tilePress: function(oEvent){

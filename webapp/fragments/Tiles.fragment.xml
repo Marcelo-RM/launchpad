@@ -1,0 +1,19 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+    <Page showHeader="false">
+        <GenericTile id="movies" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Movies" subheader="search movies" press="tilePress">
+            <TileContent unit="" footer="">
+                <NumericContent value="4" icon="sap-icon://video" withMargin="false" />
+            </TileContent>
+        </GenericTile>
+
+        <GenericTile id="manageProjects" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Gerenciar Projetos" press="tilePress">
+            <TileContent unit="Unit" footer="Footer Text">
+                <NumericContent value="3"  icon="sap-icon://collaborate"  withMargin="false" />
+            </TileContent>
+        </GenericTile>
+    </Page>
+</core:FragmentDefinition>

@@ -15,7 +15,8 @@
 				showNotifications="true"
 				menuButtonPressed="onMenuButtonPress"
 				showProductSwitcher="true"
-				notificationsNumber="2">
+				notificationsNumber="2"
+				copilotPressed="loadTilesView">
 				<f:menu>
 					<Menu>
 						<MenuItem text="Flight booking" icon="sap-icon://flight" />
@@ -33,19 +34,7 @@
 		<tnt:mainContents>
 			<NavContainer id="pageContainer" initialPage="page2">
 				<pages id="page">
-					<Page showHeader="false">
-						<GenericTile id="movies" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Movies" subheader="search movies" press="tilePress">
-							<TileContent unit="" footer="">
-								<NumericContent value="4" icon="sap-icon://video" withMargin="false" />
-							</TileContent>
-						</GenericTile>
-
-						<GenericTile id="manageProjects" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Gerenciar Projetos" press="tilePress">
-							<TileContent unit="Unit" footer="Footer Text">
-								<NumericContent value="3"  icon="sap-icon://collaborate"  withMargin="false" />
-							</TileContent>
-						</GenericTile>
-					</Page>
+					
 				</pages>
 			</NavContainer>
 		</tnt:mainContents>
