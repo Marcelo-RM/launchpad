@@ -33,7 +33,7 @@
 		<tnt:mainContents>
 			<NavContainer id="pageContainer" initialPage="page2">
 				<pages id="page">
-					<page showHeader="false">
+					<Page showHeader="false">
 						<GenericTile id="movies" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Movies" subheader="search movies" press="tilePress">
 							<TileContent unit="" footer="">
 								<NumericContent value="4" icon="sap-icon://video" withMargin="false" />
@@ -45,7 +45,7 @@
 								<NumericContent value="3"  icon="sap-icon://collaborate"  withMargin="false" />
 							</TileContent>
 						</GenericTile>
-					</page>
+					</Page>
 				</pages>
 			</NavContainer>
 		</tnt:mainContents>
