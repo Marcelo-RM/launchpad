@@ -6,18 +6,31 @@ sap.ui.define([
 	return BaseController.extend("master.launchpad.controller.App", {
 		onInit: function () {
 			
+			
+		},
+
+		tilePress: function(oEvent){
+			var id = oEvent.getSource().getId();
+			id = id.slice(id.lastIndexOf('-') +1);
+			
+			var url = "https://marcelo-rm.github.io/" + id + "/webapp";
+			this.loadIframe(url);
+		},
+
+		loadIframe: function(url){
 			var html = new sap.ui.core.HTML({
 				preferDOM: true,
-				content: "<iframe src='https://marcelo-rm.github.io/manageProjects/webapp' " + 
+				content: "<iframe src='" + url + "' " + 
 							 " width='100%' height='99.3%' frameborder='0' name='iframe' " + 
 							 " scrolling='no' allowtransparency='true'></iframe>"
 			});
 			//this.getView().byId("page").addContent(html);
-			var x = new sap.m.Page({
+			var page = new sap.m.Page({
+				showHeader: false,
 				content: html
 			});
-			this.getView().byId("pageContainer").addPage(x);
-			
+			this.getView().byId("pageContainer").removeAllPages();
+			this.getView().byId("pageContainer").addPage(page);
 		}
 	});
 });

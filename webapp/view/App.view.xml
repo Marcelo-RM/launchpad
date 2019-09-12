@@ -8,10 +8,9 @@
 		backgroundColor="#666666">
 		<tnt:ToolPage id="toolPage">
 		<tnt:header>
-			<f:ShellBar title="Application Title"
-				secondTitle="Short description"
+			<f:ShellBar
 				showMenuButton="true"
-				homeIcon="./resources/sap/ui/documentation/sdk/images/logo_ui5.png"
+				homeIcon="sap-icon://sap-ui5"
 				showCopilot="true"
 				showNotifications="true"
 				menuButtonPressed="onMenuButtonPress"
@@ -24,7 +23,7 @@
 					</Menu>
 				</f:menu>
 				<f:profile>
-					<f:Avatar initials="UI"/>
+					<f:Avatar icon="http://extranet.uniaoquimica.com.br/images/u.png" initials="UQ"/>
 				</f:profile>
 				<f:searchManager>
 					<f:SearchManager/>
@@ -34,6 +33,19 @@
 		<tnt:mainContents>
 			<NavContainer id="pageContainer" initialPage="page2">
 				<pages id="page">
+					<page showHeader="false">
+						<GenericTile id="movies" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Movies" subheader="search movies" press="tilePress">
+							<TileContent unit="" footer="">
+								<NumericContent value="4" icon="sap-icon://video" withMargin="false" />
+							</TileContent>
+						</GenericTile>
+
+						<GenericTile id="manageProjects" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Gerenciar Projetos" press="tilePress">
+							<TileContent unit="Unit" footer="Footer Text">
+								<NumericContent value="3"  icon="sap-icon://collaborate"  withMargin="false" />
+							</TileContent>
+						</GenericTile>
+					</page>
 				</pages>
 			</NavContainer>
 		</tnt:mainContents>
