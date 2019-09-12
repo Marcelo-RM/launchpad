@@ -1,11 +1,71 @@
-<mvc:View controllerName="master.launchpad.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
-	<Shell id="shell">
+<mvc:View controllerName="master.launchpad.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
+	xmlns="sap.m" xmlns:tnt="sap.tnt" 
+	xmlns:f="sap.f">
+	<Shell id="shell" 
+		headerRightText="Marcelo Montalvão"
+		logo="http://extranet.uniaoquimica.com.br/images/u.png"
+		title="Launchpad"
+		backgroundColor="#666666">
+		<tnt:ToolPage id="toolPage">
+		<tnt:header>
+			<f:ShellBar title="Application Title"
+				secondTitle="Short description"
+				showMenuButton="true"
+				homeIcon="./resources/sap/ui/documentation/sdk/images/logo_ui5.png"
+				showCopilot="true"
+				showNotifications="true"
+				menuButtonPressed="onMenuButtonPress"
+				showProductSwitcher="true"
+				notificationsNumber="2">
+				<f:menu>
+					<Menu>
+						<MenuItem text="Flight booking" icon="sap-icon://flight" />
+						<MenuItem text="Car rental" icon="sap-icon://car-rental" />
+					</Menu>
+				</f:menu>
+				<f:profile>
+					<f:Avatar initials="UI"/>
+				</f:profile>
+				<f:searchManager>
+					<f:SearchManager/>
+				</f:searchManager>
+			</f:ShellBar>
+		</tnt:header>
+		<tnt:mainContents>
+			<NavContainer id="pageContainer" initialPage="page2">
+				<pages id="page">
+				</pages>
+			</NavContainer>
+		</tnt:mainContents>
+	</tnt:ToolPage>
+		<!--
 		<App id="app">
+		<tnt:ToolHeader width="100%">
+			<Button icon="sap-icon://menu2" type="Transparent">
+			</Button>
+			<Image src="">
+			</Image>
+			<Text text="Name of the Tool" wrapping="false">
+			</Text>
+			<ToolbarSpacer />
+			<Button icon="sap-icon://search" type="Transparent">
+			</Button>
+			<Button icon="sap-icon://task" type="Transparent">
+			</Button>
+			<Button icon="sap-icon://bell" type="Transparent">
+			</Button>
+			<Button icon="http://extranet.uniaoquimica.com.br/images/u.png" type="Transparent">
+			</Button>
+			<Button icon="sap-icon://grid" type="Transparent">
+			</Button>
+		</tnt:ToolHeader>
 			<pages>
-				<Page id="page" title="{i18n>title}">
-					<content></content>
+				<Page id="page" title="">
+					<content>
+					</content>
 				</Page>
 			</pages>
 		</App>
+		-->
 	</Shell>
 </mvc:View>
