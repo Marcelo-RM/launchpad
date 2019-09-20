@@ -13,6 +13,10 @@ sap.ui.define([
             return this.getOwnerComponent().getModel(sModel);
         },
 
+        setModel: function(oModel, sName){
+            return this.getOwnerComponent().setModel(oModel, sName);
+        },
+
         getResourceBundle: function(){
             return this.getOwnerComponent().getModel("i18n").getResourceBundle();
         }

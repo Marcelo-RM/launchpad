@@ -12,6 +12,12 @@
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
+		},
+		"dataSources": {
+			"apps": {
+				"uri": "model/apps.json",
+				"type": "JSON"
+			}
 		}
 	},
 
@@ -58,6 +64,10 @@
 				"settings": {
 					"bundleName": "master.launchpad.i18n.i18n"
 				}
+			},
+			"apps": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "apps"
 			}
 		},
 		"resources": {

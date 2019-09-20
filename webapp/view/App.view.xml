@@ -32,7 +32,7 @@
 			</f:ShellBar>
 		</tnt:header>
 		<tnt:mainContents>
-			<NavContainer id="pageContainer" initialPage="page2">
+			<NavContainer id="pageContainer" busy="{appView>/busy}" initialPage="page2">
 				<pages id="page">
 					
 				</pages>

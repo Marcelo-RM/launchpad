@@ -1,0 +1,14 @@
+[
+    {
+        "header": "Movies",
+        "subHeader": "search movies",
+        "icon": "sap-icon://video",
+        "url": "https://marcelo-rm.github.io/movies/webapp"
+    },
+    {
+        "header": "Gerenciar projetos",
+        "subHeader": "",
+        "icon": "sap-icon://collaborate",
+        "url": "https://marcelo-rm.github.io/manageProjects/webapp"
+    }
+] 
