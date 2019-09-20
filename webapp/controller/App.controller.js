@@ -52,13 +52,10 @@ sap.ui.define([
 		},
 
 		tilePress: function(oEvent){
-			var id = oEvent.getSource().getId();
-			id = id.slice(id.lastIndexOf('-') +1);
-			
-			var url = "https://marcelo-rm.github.io/" + id + "/webapp";
-			this.loadIframe(url);
-		},
+			window.location.href = oEvent.getSource().getBindingContext().url;
+		}
 
+		/* Carregamento direto, não necessário mais usar iframe
 		loadIframe: function(url){
 			var html = new sap.ui.core.HTML({
 				preferDOM: true,
@@ -74,5 +71,6 @@ sap.ui.define([
 			this.getView().byId("pageContainer").removeAllPages();
 			this.getView().byId("pageContainer").addPage(page);
 		}
+		*/
 	});
 });
