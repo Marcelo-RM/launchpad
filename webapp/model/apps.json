@@ -17,21 +17,21 @@
         "header": "Consultar Cep",
         "subHeader": "Dados sobre um local",
         "icon": "sap-icon://map-2",
-        "url": "https://marcelo-rm.github.io/manageProjects/webapp",
+        "url": "https://marcelo-rm.github.io/consultaCep",
         "type": "jquery"
     },
     {
         "header": "Basic Page",
         "subHeader": "site simples de apresentação",
         "icon": "sap-icon://internet-browser",
-        "url": "https://marcelo-rm.github.io/manageProjects/webapp",
+        "url": "https://marcelo-rm.github.io/siteBootstrap/",
         "type": "bootstrap"
     },
     {
         "header": "Conversor de moedas",
         "subHeader": "",
         "icon": "sap-icon://collections-insight",
-        "url": "https://marcelo-rm.github.io/manageProjects/webapp",
+        "url": "https://marcelo-rm.github.io/conversor_moeda/",
         "type": "react"
     }
 ] 
