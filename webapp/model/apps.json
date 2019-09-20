@@ -3,12 +3,35 @@
         "header": "Movies",
         "subHeader": "search movies",
         "icon": "sap-icon://video",
-        "url": "https://marcelo-rm.github.io/movies/webapp"
+        "url": "https://marcelo-rm.github.io/movies/webapp",
+        "type": "ui5"
     },
     {
         "header": "Gerenciar projetos",
         "subHeader": "",
         "icon": "sap-icon://collaborate",
-        "url": "https://marcelo-rm.github.io/manageProjects/webapp"
+        "url": "https://marcelo-rm.github.io/manageProjects/webapp",
+        "type": "ui5"
+    },
+    {
+        "header": "Consultar Cep",
+        "subHeader": "Dados sobre um local",
+        "icon": "sap-icon://map-2",
+        "url": "https://marcelo-rm.github.io/manageProjects/webapp",
+        "type": "jquery"
+    },
+    {
+        "header": "Basic Page",
+        "subHeader": "site simples de apresentação",
+        "icon": "sap-icon://internet-browser",
+        "url": "https://marcelo-rm.github.io/manageProjects/webapp",
+        "type": "bootstrap"
+    },
+    {
+        "header": "Conversor de moedas",
+        "subHeader": "",
+        "icon": "sap-icon://collections-insight",
+        "url": "https://marcelo-rm.github.io/manageProjects/webapp",
+        "type": "react"
     }
 ] 
