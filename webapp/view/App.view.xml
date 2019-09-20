@@ -9,26 +9,17 @@
 		<tnt:ToolPage id="toolPage">
 		<tnt:header>
 			<f:ShellBar
-				showMenuButton="true"
-				homeIcon="sap-icon://sap-ui5"
+				showMenuButton="false"
+				homeIcon=""
 				showCopilot="true"
-				showNotifications="true"
+				showNotifications="false"
 				menuButtonPressed="onMenuButtonPress"
-				showProductSwitcher="true"
+				showProductSwitcher="false"
 				notificationsNumber="2"
 				copilotPressed="loadTilesView">
-				<f:menu>
-					<Menu>
-						<MenuItem text="Flight booking" icon="sap-icon://flight" />
-						<MenuItem text="Car rental" icon="sap-icon://car-rental" />
-					</Menu>
-				</f:menu>
 				<f:profile>
-					<f:Avatar icon="http://extranet.uniaoquimica.com.br/images/u.png" initials="UQ"/>
+					<f:Avatar src="sap-icon://customer" initials="MM"/>
 				</f:profile>
-				<f:searchManager>
-					<f:SearchManager/>
-				</f:searchManager>
 			</f:ShellBar>
 		</tnt:header>
 		<tnt:mainContents>
