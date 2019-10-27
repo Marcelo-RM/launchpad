@@ -31,7 +31,7 @@ sap.ui.define([
 			for(var i = 0; i < apps.length; i++){
 				var tile = new sap.m.GenericTile({
 					header: apps[i].header,
-					subheader: apps[i].subHeader,
+					subheader: apps[i].type,
 					press: this.tilePress,
 					tileContent: new sap.m.TileContent({
 						content: new sap.m.ImageContent({
