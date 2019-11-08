@@ -3,22 +3,21 @@
 	xmlns:f="sap.f">
 	<Shell id="shell" 
 		headerRightText="Marcelo Montalvão"
-		logo="http://extranet.uniaoquimica.com.br/images/u.png"
 		title="Launchpad"
 		backgroundColor="#666666">
 		<tnt:ToolPage id="toolPage">
 		<tnt:header>
 			<f:ShellBar
 				showMenuButton="false"
-				homeIcon=""
-				showCopilot="true"
+				homeIcon="../assets/logo_t.svg"
+				showCopilot="false"
 				showNotifications="false"
 				menuButtonPressed="onMenuButtonPress"
 				showProductSwitcher="false"
 				notificationsNumber="2"
 				copilotPressed="loadTilesView">
 				<f:profile>
-					<f:Avatar src="sap-icon://customer" initials="MM"/>
+					<f:Avatar src="./webapp/assets/logoBold_fb.svg" initials="MM"/>
 				</f:profile>
 			</f:ShellBar>
 		</tnt:header>
