@@ -1,5 +1,12 @@
 [
     {
+        "header": "Process Flow",
+        "subHeader": "manage delivery",
+        "icon": "sap-icon://functional-location",
+        "url": "https://marcelo-rm.github.io/process-flow/",
+        "type": "Chart.js / Bootstrap"
+    },
+    {
         "header": "Movies",
         "subHeader": "search movies",
         "icon": "sap-icon://video",
