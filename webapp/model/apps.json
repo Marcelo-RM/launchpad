@@ -1,5 +1,12 @@
 [
     {
+        "header": "Busy Indicator",
+        "subHeader": "Loading elements",
+        "icon": "sap-icon://refresh",
+        "url": "https://marcelo-rm.github.io/busyIndicator",
+        "type": "Javascript / Css"
+    },
+    {
         "header": "Process Flow",
         "subHeader": "manage delivery",
         "icon": "sap-icon://functional-location",
